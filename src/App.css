@@ -1,0 +1,113 @@
+/* App.css */
+
+/* Grundläggande styling för hela appen */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+/* Styling för header */
+.pirate-header {
+  background-color: #006994;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.pirate-header h1 {
+  margin: 0;
+}
+
+/* Styling för fetch-knappen */
+.fetch-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.fetch-btn:hover {
+  background-color: #e55b00;
+}
+
+/* Styling för felmeddelande */
+p {
+  color: red;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+/* Grid-layout för karaktärerna */
+.pirate-crew {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling för varje karaktärs kort */
+.pirate-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  gap: 15px;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Styling för bilden */
+.pirate-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Styling för textdelen */
+.pirate-card-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* Styling för namnet */
+.pirate-card-content h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  white-space: nowrap; /* Prevent name from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+/* Styling för filmtitlarna som en lista */
+.movie-titles {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.movie-titles span {
+  background-color: #efefef;
+  color: #555;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap; /* Prevent title from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
